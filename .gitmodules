@@ -1,0 +1,42 @@
+[submodule "veld_chain_ex1_fetch_json"]
+	path = veld_chain_ex1_fetch_json
+	url = git@github.com:steffres/veld_chain_ex1_fetch_json.git
+[submodule "veld_chain_ex2_json_to_xml"]
+	path = veld_chain_ex2_json_to_xml
+	url = git@github.com:steffres/veld_chain_ex2_json_to_xml.git
+[submodule "veld_chain_ex3_validate_xml"]
+	path = veld_chain_ex3_validate_xml
+	url = git@github.com:steffres/veld_chain_ex3_validate_xml.git
+[submodule "veld_chain_ex4_load_to_basex"]
+	path = veld_chain_ex4_load_to_basex
+	url = git@github.com:steffres/veld_chain_ex4_load_to_basex.git
+[submodule "veld_chain_ex5_fetch_convert_validate_load"]
+	path = veld_chain_ex5_fetch_convert_validate_load
+	url = git@github.com:steffres/veld_chain_ex5_fetch_convert_validate_load.git
+[submodule "veld_data_ex1_json"]
+	path = veld_data_ex1_json
+	url = git@github.com:steffres/veld_data_ex1_json.git
+[submodule "veld_data_ex2_xml"]
+	path = veld_data_ex2_xml
+	url = git@github.com:steffres/veld_data_ex2_xml.git
+[submodule "veld_data_ex3_basex"]
+	path = veld_data_ex3_basex
+	url = git@github.com:steffres/veld_data_ex3_basex.git
+[submodule "veld_executable_ex1_fetch_json"]
+	path = veld_executable_ex1_fetch_json
+	url = git@github.com:steffres/veld_executable_ex1_fetch_json.git
+[submodule "veld_executable_ex2_json_to_xml"]
+	path = veld_executable_ex2_json_to_xml
+	url = git@github.com:steffres/veld_executable_ex2_json_to_xml.git
+[submodule "veld_executable_ex3_validate_xml"]
+	path = veld_executable_ex3_validate_xml
+	url = git@github.com:steffres/veld_executable_ex3_validate_xml.git
+[submodule "veld_executable_ex4_basex"]
+	path = veld_executable_ex4_basex
+	url = git@github.com:steffres/veld_executable_ex4_basex.git
+[submodule "veld_executable_ex5_load_to_basex"]
+	path = veld_executable_ex5_load_to_basex
+	url = git@github.com:steffres/veld_executable_ex5_load_to_basex.git
+[submodule "veld_chain_ex6_split_chains_ex5"]
+	path = veld_chain_ex6_split_chains_ex5
+	url = git@github.com:steffres/veld_chain_ex6_split_chains_ex5.git
