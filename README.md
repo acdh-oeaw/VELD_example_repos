@@ -36,11 +36,10 @@ There are three kinds:
 
 - **executable**
 
-  a docker service, defined as a compose service, with arbitrary dockerfile / images / code
-  contexts.  The VELD metadata describes what kind of data / executable it is compatible with. Note
-  that while an executable is by definition something that can be run on itself, it is usually not
-  meant to be run alone, as it would likely need some context, like what data to be fed or where to
-  store output, etc.
+  a docker compose service, with arbitrary dockerfile / images / code contexts.  The VELD metadata
+  describes what kind of data / executable it is compatible with. Note that while an executable is
+  by definition something that can be run on itself, it is usually not meant to be run alone Rather
+  it would likely need some context, like what data to be fed or where to store output, etc.
 
 - **chain**
 
@@ -50,8 +49,8 @@ There are three kinds:
 Basically, in most cases, a **veld data** repo is combined with a **veld executable**, wired
 together in a **veld chain**.
 
-Since all of those VELD objects are git repositories, all their states are persisted and made
-reproducable.
+Since all of those VELD objects are git repositories, all their states and execution environments
+are persisted and made reproducable.
 
 ### VELD metadata (veld.yaml)
 
