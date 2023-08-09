@@ -67,6 +67,32 @@ likely that several distinct chains are used throughout a single project, a more
 is required. The detailed reasoning and trade-offs of this decision are discussed in the technical
 concept.
 
+The metadata for a veld are described in a veld.yaml file, like so:
+```
+x-veld:
+  executable:
+    ...
+```
+
+And if it's an **executable** or a **chain**, then its service is described as regular docker 
+compose service, like so:
+```
+services:
+  veld:
+    ...
+```
+
+Basically a VELD yaml file:
+
+- **must** contain a section `x-veld`.
+
+  This section informs about the VELD interoperability and communicates its purpose.
+  
+- **may** contain a section `services`.
+
+  If it can be executed, this makes a VELD yaml file an enriched docker compose file,
+  which VELD will always fully adhere to.
+
 ### How to play around
 
 The repos were implemented with the following tools and versions. Other versions were not tried out.
