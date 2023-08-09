@@ -82,8 +82,8 @@ git clone --recurse-submodules git@github.com:steffres/VELD_example_repos.git
 
 Then go into the repos and look around. Each veld repo contains a description of itself.
 
-If a VELD repo contains a **chain**, it can be launched as a docker service. For this,
-first build it:
+If a VELD repo contains a **chain** (or an **executable**), it can be launched as a docker 
+service. For this, first build it:
 ```
 docker compose -f veld.yaml build
 ```
