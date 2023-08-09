@@ -103,6 +103,7 @@ You might also create an alias for both of these commands together for convenien
 ```
 alias veld='docker compose -f veld.yaml build && docker compose -f veld.yaml up'
 ```
+Then you would only need to issue `veld` to build and run a veld service.
 
 Note: If you have an older version of docker compose, you might need to call `docker-compose`
 instead.
