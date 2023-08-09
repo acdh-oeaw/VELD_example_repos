@@ -92,6 +92,18 @@ then run it:
 docker compose -f veld.yaml up
 ```
 
+When using Bash, it is recommended to issue those commands together to guarantee that any changes in
+the current build context are respected, and the execution will only start if the build was
+successful:
+```
+docker compose -f veld.yaml build && docker compose -f veld.yaml up
+```
+
+You might also create an alias for both of these commands together for convenience:
+```
+alias veld='docker compose -f veld.yaml build && docker compose -f veld.yaml up'
+```
+
 Note: If you have an older version of docker compose, you might need to call `docker-compose`
 instead.
 
