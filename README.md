@@ -10,17 +10,20 @@ around.
 
 Real-life usages of VELD can be found here: https://github.com/steffres/VELD_production_repos
 
-The examples are designed to:
+The examples simulate several atomic steps, forming together an overarching ETL pipeline, where data
+is fetched from an external resource, processed, validated, and loaded into a database. 
+
+They are designed primarily to:
 
 - be minimalistic
   
   For each kind of functionality a minimalistic set of logic and data shape was chosen to focus on
   the VELD design.
   
-- simulate real-life requirements
+- represent real-life requirements
 
-  Allthough the data is simple, the processes handling them should be somewhat representative of
-  regular data processing. 
+  Allthough the data and logic is simple, the underlying requirements and concepts should be
+  somewhat representative of regular data processing. 
 
 - grow gradually in complexity
 
@@ -58,24 +61,24 @@ are persisted and made reproducable.
 ### VELD metadata (veld.yaml)
 
 A **veld data** and a **veld executable** is defined by one **veld.yaml** file at the root of its
-repo.  Each repo thus precisely one such veld object.
+repo. Each repo thus represents precisely one such veld object.
 
-A **veld chain** is defined in most cases too by a **veld.yaml** at the root, but it might also be
+A **veld chain** is defined in most cases by a **veld.yaml** too at the root, but it might also be
 defined by any **.yaml** at the root of a repo which contain a chain definition. Because it is
 likely that several distinct chains are used throughout a project, a more flexible approach is
-required.  It is advise however that whenever possible to also use a single **veld.yaml** for a
-single chain of a single repo.
+required. The detailed reasoning and trade-offs of this decision are discussed in the technical 
+concept. It is advised however that whenever possible to also use a single **veld.yaml** for a
+single chain of a single repo (as most examples do in this collection).
 
 ### how to play around
 
-The repos were implemented with these following versions. I don't know which other versions could
-cause problems.
+The repos were implemented with these tools and these versions. Other versions were not tried out.
 
-- git (proven working version: `2.34.1`)
-- docker (proven working version: `24.0.3`)
-- docker compose (proven working version: `v2.20.2`)
+- git: `2.34.1`
+- docker: `24.0.3`
+- docker compose: `v2.20.2`
 
-Clone this repo and all its subrepos recursively by:
+To clone this repo and all its subrepos recursively, do:
 ```
 git clone --recurse-submodules git@github.com:steffres/VELD_example_repos.git
 ```
