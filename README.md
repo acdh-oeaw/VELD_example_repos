@@ -57,7 +57,7 @@ together in a **chain veld**.
 
 ### VELD metadata (veld.yaml)
 
-A **veld data** and a **veld executable** is defined by one **veld.yaml** file at the root of its
+A **data veld** and an **executable veld** is defined by one **veld.yaml** file at the root of its
 repo. Each repo thus represents precisely one such veld object.
 
 A **veld chain** is defined in most cases by a **veld.yaml** too at the root, but it might also be
