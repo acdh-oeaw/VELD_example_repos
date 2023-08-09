@@ -109,7 +109,7 @@ veld veld.yaml
 ```
 
 Note: If you have an older version of docker compose, you might need to call `docker-compose`
-instead.
+instead of `docker compose`.
 
 Note: You could also launch a VELD **executable** this way, since both **executable** and **chain** 
 are regular docker compose services. But most likely launching an **executable** alone will result
