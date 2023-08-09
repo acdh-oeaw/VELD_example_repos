@@ -62,9 +62,9 @@ A **veld data** and a **veld executable** is defined by one **veld.yaml** file a
 repo. Each repo thus represents precisely one such veld object.
 
 A **veld chain** is defined in most cases by a **veld.yaml** too at the root, but it might also be
-defined by any **\*.yaml** at the root of a repo which contains a chain definition. Because it is
-likely that several distinct chains are used throughout a project, a more flexible approach is
-required. The detailed reasoning and trade-offs of this decision are discussed in the technical 
+defined by any **.yaml** at the root of a repo which contains a chain definition. Because it is
+likely that several distinct chains are used throughout a single project, a more flexible approach
+is required. The detailed reasoning and trade-offs of this decision are discussed in the technical
 concept.
 
 ### How to play around
