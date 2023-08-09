@@ -103,7 +103,10 @@ You might also create a bash function for both of these commands together for co
 ```
 veld() { docker compose -f $1 build && docker compose -f $1 up; }
 ```
-Then you would only need to issue `veld veld.yaml` to build and run a veld service.
+Then to build and run a veld, you would only need to:
+```
+veld veld.yaml
+```
 
 Note: If you have an older version of docker compose, you might need to call `docker-compose`
 instead.
