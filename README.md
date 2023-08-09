@@ -5,7 +5,10 @@ https://docs.google.com/document/d/1KbHJpWErnhfYhVzBtoimg5R7a_j9T-4RqQynm9To1T4/
 
 ### about
 
-Here is a collection of example repos implementing the VELD design, to showcase and play around.
+This here is a collection of example repos implementing the VELD design, to showcase and play
+around.
+
+Real-life usages of VELD can be found here: https://github.com/steffres/VELD_production_repos
 
 The examples are designed to:
 
@@ -78,4 +81,7 @@ git clone --recurse-submodules git@github.com:steffres/VELD_example_repos.git
 ```
 
 Then go into the repos and look around. Each veld repo contains a description of itself.
+
+It is recommended to go through the repos in order by their numbers as they increase with complexity
+and are related by forming an overarching ETL task. 
 
