@@ -27,9 +27,7 @@ They are designed primarily to:
 
 - grow gradually in complexity
 
-  With each increasing example number, the complexity of functionality increases too. Te repos
-  simulate a data processing task, where data is first load, then converted, validated, and
-  ultimately loaded into database.
+  With each increasing example number, the complexity of VELD functionality increases too. 
 
 ### VELD objects
 
