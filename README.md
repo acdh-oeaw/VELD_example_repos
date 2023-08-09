@@ -3,7 +3,7 @@
 On the VELD design, see the living technical concept here:
 https://docs.google.com/document/d/1KbHJpWErnhfYhVzBtoimg5R7a_j9T-4RqQynm9To1T4/edit#heading=h.lg83zwmcjpqe
 
-### about
+### About
 
 This here is a collection of example repos implementing the VELD design, to showcase and play
 around.
@@ -62,15 +62,14 @@ A **veld data** and a **veld executable** is defined by one **veld.yaml** file a
 repo. Each repo thus represents precisely one such veld object.
 
 A **veld chain** is defined in most cases by a **veld.yaml** too at the root, but it might also be
-defined by any **.yaml** at the root of a repo which contain a chain definition. Because it is
+defined by any **\*.yaml** at the root of a repo which contains a chain definition. Because it is
 likely that several distinct chains are used throughout a project, a more flexible approach is
 required. The detailed reasoning and trade-offs of this decision are discussed in the technical 
-concept. It is advised however that whenever possible to also use a single **veld.yaml** for a
-single chain of a single repo (as most examples do in this collection).
+concept.
 
-### how to play around
+### How to play around
 
-The repos were implemented with these tools and these versions. Other versions were not tried out.
+The repos were implemented with the following tools and versions. Other versions were not tried out.
 
 - git: `2.34.1`
 - docker: `24.0.3`
