@@ -99,11 +99,11 @@ successful:
 docker compose -f veld.yaml build && docker compose -f veld.yaml up
 ```
 
-You might also create an alias for both of these commands together for convenience:
+You might also create a bash function for both of these commands together for convenience:
 ```
-alias veld='docker compose -f veld.yaml build && docker compose -f veld.yaml up'
+veld() { docker compose -f $1 build && docker compose -f $1 up; }
 ```
-Then you would only need to issue `veld` to build and run a veld service.
+Then you would only need to issue `veld veld.yaml` to build and run a veld service.
 
 Note: If you have an older version of docker compose, you might need to call `docker-compose`
 instead.
