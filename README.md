@@ -42,19 +42,18 @@ There are three kinds:
 
   a docker compose service, with arbitrary dockerfile / images / code contexts.  The VELD metadata
   describes what kind of data / executable it is compatible with. Note that while an executable is
-  by definition something that can be run on itself, it is usually not meant to be run alone Rather
-  it would likely need some context, like what data to be fed or where to store output, etc.
+  by definition something that can be run on itself, it is usually not meant to be run alone. Rather
+  it would likely need some context, e.g. a data **veld** mounted as input. The purpose of an
+  **executable veld** is to provide itself as an easily reusable tool.
 
 - **chain**
 
-  Also a docker service, but one that reuses services from executables and wires it together to data
-  sets or other executables. 
+  Also a docker service, but one that reuses services from **executable velds**, and wires them
+  together to **data velds** or **executable velds**, in order to produce a certain outcome, in a
+  concrete reproducable implementation.
 
-Basically, in most cases, a **veld data** repo is combined with a **veld executable**, wired
-together in a **veld chain**.
-
-Since all of those VELD objects are git repositories, all their states and execution environments
-are persisted and made reproducable.
+Basically, in most cases, a **data veld** veld repo is combined with an **executable veld**, wired
+together in a **chain veld**.
 
 ### VELD metadata (veld.yaml)
 
@@ -128,10 +127,6 @@ veld veld.yaml
 
 Note: If you have an older version of docker compose, you might need to call `docker-compose`
 instead of `docker compose`.
-
-Note: You could also launch a VELD **executable** this way, since both **executable** and **chain** 
-are regular docker compose services. But most likely launching an **executable** alone will result
-in errors as it most likely requires some context (e.g. a **data** veld mapped as input volume).
 
 It is recommended to go through the repos in order by their numbers as they increase with complexity
 and are related by forming an overarching ETL task. 
