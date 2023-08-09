@@ -43,14 +43,14 @@ There are three kinds:
   a docker compose service, with arbitrary dockerfile / images / code contexts.  The VELD metadata
   describes what kind of data / executable it is compatible with. Note that while an executable is
   by definition something that can be run on itself, it is usually not meant to be run alone. Rather
-  it would likely need some context, e.g. a data **veld** mounted as input. The purpose of an
+  it would likely need some context, e.g. a **data veld** mounted as input. The purpose of an
   **executable veld** is to provide itself as an easily reusable tool.
 
 - **chain**
 
   Also a docker service, but one that reuses services from **executable velds**, and wires them
-  together to **data velds** or **executable velds**, in order to produce a certain outcome, in a
-  concrete reproducable implementation.
+  together to **data velds** or even further **executable velds**. The purpose of a **chain veld**
+  is to fullfill a concrete task in a reproducable implementation.
 
 Basically, in most cases, a **data veld** veld repo is combined with an **executable veld**, wired
 together in a **chain veld**.
