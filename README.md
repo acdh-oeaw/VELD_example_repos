@@ -136,6 +136,8 @@ in errors as it most likely requires some context (e.g. a **data** veld mapped a
 It is recommended to go through the repos in order by their numbers as they increase with complexity
 and are related by forming an overarching ETL task. 
 
+### Write your own velds
 
-
-
+#TODO
+- desribe mapping issue when host side does not exist
+- recommend docker user creation inside container to avoid root execution
