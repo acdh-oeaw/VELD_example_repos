@@ -50,7 +50,7 @@ There are three kinds:
 
   Also a docker service, but one that reuses services from **executable velds**, and wires them
   together to **data velds** or even further **executable velds**. The purpose of a **chain veld**
-  is to fullfill a concrete task in a reproducable implementation.
+  is to fullfill a concrete task in a reproducible implementation.
 
 Basically, in most cases, a **data veld** veld repo is combined with an **executable veld**, wired
 together in a **chain veld**.
@@ -94,7 +94,8 @@ Basically a VELD yaml file:
 
 ### How to play around
 
-The repos were implemented with the following tools and versions. Other versions were not tried out.
+The repos were implemented with the following tools and versions. Other versions were not tried out, 
+but unless they are ancient, older versions should work nicely too.
 
 - git: `2.34.1`
 - docker: `24.0.3`
