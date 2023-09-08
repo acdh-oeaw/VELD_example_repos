@@ -110,6 +110,9 @@ Then go into the repos and look around. Each veld repo contains a description of
 
 If a VELD repo contains a **chain** (or an **executable**), it can be launched as a docker 
 service. For this, first build it:
+
+(Note: If you have an older version of docker compose, you might need to call `docker-compose`
+instead of `docker compose`)
 ```
 docker compose -f veld.yaml build
 ```
@@ -125,9 +128,6 @@ Then to build and run a veld, you would only need to:
 ```
 veld veld.yaml
 ```
-
-Note: If you have an older version of docker compose, you might need to call `docker-compose`
-instead of `docker compose`.
 
 It is recommended to go through the repos in order by their numbers as they increase with complexity
 and are related by forming an overarching ETL task. 
