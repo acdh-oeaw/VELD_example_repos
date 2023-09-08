@@ -120,7 +120,8 @@ then run it:
 ```
 docker compose -f veld.yaml up
 ```
-You might also create a bash function for both of these commands together for convenience:
+If you use Bash, you might also create a function for both of these commands together for convenience 
+(this way whatever you run will always be guaranteed to be built too in one quick command):
 ```
 veld() { docker compose -f $1 build && docker compose -f $1 up; }
 ```
