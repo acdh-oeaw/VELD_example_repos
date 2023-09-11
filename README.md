@@ -103,7 +103,7 @@ but unless they are ancient, older versions should work nicely too.
 
 To clone this repo and all its subrepos recursively, do:
 ```
-git clone --recurse-submodules git@github.com:steffres/VELD_example_repos.git
+git clone --recurse-submodules https://github.com/steffres/VELD_example_repos.git
 ```
 
 Then go into the repos and look around. Each veld repo contains a description of itself.
