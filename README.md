@@ -50,7 +50,7 @@ There are three kinds:
 
   Also a docker service, but one that reuses services from **executable velds**, and wires them
   together to **data velds** or even further **executable velds**. The purpose of a **chain veld**
-  is to fullfill a concrete task in a reproducable implementation.
+  is to fullfill a concrete task in a reproducible implementation.
 
 Basically, in most cases, a **data veld** veld repo is combined with an **executable veld**, wired
 together in a **chain veld**.
@@ -94,7 +94,8 @@ Basically a VELD yaml file:
 
 ### How to play around
 
-The repos were implemented with the following tools and versions. Other versions were not tried out.
+The repos were implemented with the following tools and versions. Other versions were not tried out, 
+but unless they are ancient, older versions should work nicely too.
 
 - git: `2.34.1`
 - docker: `24.0.3`
@@ -109,6 +110,9 @@ Then go into the repos and look around. Each veld repo contains a description of
 
 If a VELD repo contains a **chain** (or an **executable**), it can be launched as a docker 
 service. For this, first build it:
+
+(Note: If you have an older version of docker compose, you might need to call `docker-compose`
+instead of `docker compose`)
 ```
 docker compose -f veld.yaml build
 ```
@@ -116,7 +120,8 @@ then run it:
 ```
 docker compose -f veld.yaml up
 ```
-You might also create a bash function for both of these commands together for convenience:
+If you use Bash, you might also create a function for both of these commands together for convenience 
+(this way whatever you run will always be guaranteed to be built too in one quick command):
 ```
 veld() { docker compose -f $1 build && docker compose -f $1 up; }
 ```
@@ -124,9 +129,6 @@ Then to build and run a veld, you would only need to:
 ```
 veld veld.yaml
 ```
-
-Note: If you have an older version of docker compose, you might need to call `docker-compose`
-instead of `docker compose`.
 
 It is recommended to go through the repos in order by their numbers as they increase with complexity
 and are related by forming an overarching ETL task. 
